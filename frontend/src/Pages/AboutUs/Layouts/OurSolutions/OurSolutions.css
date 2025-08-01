@@ -1,0 +1,134 @@
+/* Import Poppins if needed */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.solutions-section {
+  padding: 60px 5%;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #0b0b40;
+  text-align: left;
+}
+
+.solutions-section h2 {
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+
+.solutions-section .highlight {
+  color: #b400f0;
+}
+
+.solutions-description {
+  font-size: 1.2rem;
+  color: #1e1e72;
+  max-width: 800px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.solutions-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.solution-card {
+  background: #f7f7f7;
+  padding: 25px 20px;
+  border-radius: 12px;
+  flex: 1 1 calc(20% - 20px);
+  min-width: 200px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  transition: transform 0.2s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+}
+
+.solution-logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0b0b40;
+}
+
+.solution-title {
+  font-size: 1rem;
+  color: #0b0b40;
+  margin-bottom: auto;
+}
+
+.arrow {
+  font-size: 1.3rem;
+  color: #0b0b40;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .solutions-grid {
+    justify-content: center;
+  }
+
+  .solution-card {
+    flex: 1 1 calc(45% - 20px);
+  }
+
+  .solutions-section h2 {
+    font-size: 4rem;
+  }
+}
+
+/* Mobile: marquee effect */
+@media (max-width: 600px) {
+  .solutions-section h2 {
+    font-size: 3rem;
+  }
+
+  .solutions-description {
+    font-size: 1rem;
+  }
+
+  .solutions-grid {
+    flex-wrap: nowrap;        /* Keep cards in one row */
+    overflow: hidden;         /* Hide overflow for marquee effect */
+    padding-bottom: 10px;
+    gap: 15px;
+    /* Make width large enough to hold all cards twice */
+    width: 200%;              
+    animation: marqueeScroll 20s linear infinite;
+  }
+
+  /* Hide scrollbars if any */
+  .solutions-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .solutions-grid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .solution-card {
+    flex: 0 0 auto;
+    width: 80vw;
+    max-width: none;
+    min-width: 80vw;
+  }
+
+  /* Keyframes for continuous left to right scroll */
+  @keyframes marqueeScroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

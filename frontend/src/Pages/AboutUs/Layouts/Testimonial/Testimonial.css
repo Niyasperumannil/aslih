@@ -1,0 +1,126 @@
+.testimonial-section {
+  padding: 60px 5%;
+  background-color: #ffffff;
+  font-family: inherit;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.testimonial-image img {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  flex: 1;
+  min-width: 300px;
+  color: #0b0b40;
+  padding: 0;
+  position: relative; /* changed from absolute for better responsiveness */
+}
+
+.quote-mark {
+  font-size: 3rem;
+  color: #b400f0;
+  font-weight: bold;
+  padding-left: 35%;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  padding-left: 20%;
+  font-style: italic;
+  color: #1e1e72;
+  margin-bottom: 6%;
+  line-height: 1.6;
+}
+
+.highlight {
+  font-family: inherit;
+  font-style: normal;
+}
+
+.testimonial-name {
+  font-size: 1.1rem;
+  color: #0b0b40;
+  padding-left: 35%;
+}
+
+.testimonial-title {
+  font-size: 1rem;
+  color: #0b0b40;
+  padding-left: 35%;
+}
+
+/* Tablet and below */
+@media (max-width: 992px) {
+  .quote-mark {
+    padding-left: 20%;
+  }
+  .testimonial-text {
+    padding-left: 20%;
+  }
+  .testimonial-name,
+  .testimonial-title {
+    padding-left: 20%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .testimonial-image {
+    display: none;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .testimonial-content {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .quote-mark {
+    font-size: 2rem;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 1.1rem;
+    padding-left: 0;
+  }
+
+  .testimonial-name,
+  .testimonial-title {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+}
+
+/* Small mobile view */
+@media (max-width: 480px) {
+  .testimonial-section {
+    padding: 40px 5%;
+  }
+  .quote-mark {
+    font-size: 1.8rem;
+  }
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,184 @@
+/* Grid container */
+.upload-wa-grid {
+  display: grid;
+  gap: 40px;
+  padding: 40px 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .upload-wa-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Card styling */
+.upload-text-section,
+.form-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 30px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.upload-text-section:hover,
+.form-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+/* Text card content */
+.upload-text-section h2 { font-size: 2rem; margin-bottom: 10px; }
+.upload-text-section h3 { margin-top: 20px; font-size: 1.5rem; color: #333; }
+.upload-text-section p,
+.upload-text-section ul { font-size: 1.1rem; color: #444; line-height: 1.5; }
+.upload-text-section ul { margin: 10px 0 0 20px; }
+.upload-text-section ul li { margin-bottom: 8px; }
+
+/* Form layout */
+.upload-input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Floating input labels */
+.floating {
+  position: relative;
+  margin-top: 20px;
+}
+.floating input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+.floating label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #666;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.floating input:focus + label,
+.floating input:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 0.85rem;
+  color: #25d366;
+}
+
+/* Focus glow effect */
+.upload-input-section input:focus {
+  box-shadow: 0 0 8px rgba(37,211,102,0.6);
+  border-color: #25d366;
+  transition: box-shadow 0.3s;
+}
+
+.file-label {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.upload-input-section input[type="file"] {
+  margin-top: 8px;
+  padding: 8px;
+}
+
+/* Submit button animation */
+.upload-input-section button {
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(120deg, #25d366 0%, #1ebe57 100%);
+  background-size: 200%;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-position 0.5s, transform 0.3s;
+  animation: bounce 2s;
+}
+.upload-input-section button:hover {
+  background-position: right center;
+  transform: scale(1.03);
+}
+
+/* Button bounce keyframes */
+@keyframes bounce {
+  0%,20%,50%,80%,100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
+/* Floating WhatsApp helper (optional) */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background: #25d366;
+  color: #fff !important;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+.whatsapp-float i {
+  margin-top: 16px;
+}
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  .upload-wa-grid {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .upload-text-section,
+  .form-card {
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .upload-text-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .upload-text-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .upload-text-section p,
+  .upload-text-section ul li {
+    font-size: 1rem;
+  }
+
+  .floating input {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .floating label {
+    font-size: 0.9rem;
+  }
+
+  .bfloating input:focus + label,
+  .floating input:not(:placeholder-shown) + label {
+    font-size: 0.75rem;
+  }
+
+  .upload-input-section button {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+  }
+}

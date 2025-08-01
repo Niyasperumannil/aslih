@@ -1,5 +1,5 @@
 import React from 'react';
-import './Seo.css'; // Make sure to link your matching CSS
+import './Email.css'; 
 import { useEffect, useRef, useState } from 'react';
 // import Home from '../../components/Home/Home.jsx';
 // import VerticalHeader from '../../components/VerticalHeader/VerticalHeader';

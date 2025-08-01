@@ -9,7 +9,7 @@ import ContactUs from './Pages/ContactUS/ContactUs';
 import ContentMarketing from './Pages/Dropdown/Content Marketing/Design';
 import CreativeStrategy from './Pages/Dropdown/Creative Stragey/Development';
 import Cro from './Pages/Dropdown/Cro/Maeketing';
-import Email from './Pages/Dropdown/Email/Seo';
+import Email from './Pages/Dropdown/Email/Email';
 import Influencer from './Pages/Dropdown/Influencer/Seo2';
 import SEO from './Pages/Dropdown/SEO/Seo';
 import Starging from './Pages/Dropdown/Starging/Strging';

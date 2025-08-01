@@ -32,11 +32,6 @@ function App() {
           <Route path='/SEO' element={<SEO />} />
           <Route path='/Starging' element={<Starging />} />
           <Route path='/CreativeStrategy' element={<CreativeStrategy />} />
-
-          
-
-
-
         </Routes>
       </main>
     </Router>

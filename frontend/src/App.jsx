@@ -14,11 +14,15 @@ import Email from './Pages/Dropdown/Email/Email';
 import Influencer from './Pages/Dropdown/Influencer/Seo2';
 import SEO from './Pages/Dropdown/SEO/Seo';
 import Starging from './Pages/Dropdown/Starging/Strging';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
     <Routes>
+      {/* Root route: serves when URL is "/aslih/" */}
       <Route path="/" element={<Header />} />
+
+      {/* Defined content routes */}
       <Route path="/about" element={<AboutUs />} />
       <Route path="/references" element={<References />} />
       <Route path="/careers" element={<Careers />} />
@@ -30,6 +34,9 @@ function App() {
       <Route path="/SEO" element={<SEO />} />
       <Route path="/Starging" element={<Starging />} />
       <Route path="/CreativeStrategy" element={<CreativeStrategy />} />
+
+      {/* Wildcard fallback: handles any unknown paths */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

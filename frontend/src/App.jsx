@@ -14,7 +14,6 @@ import Email from './Pages/Dropdown/Email/Email';
 import Influencer from './Pages/Dropdown/Influencer/Seo2';
 import SEO from './Pages/Dropdown/SEO/Seo';
 import Starging from './Pages/Dropdown/Starging/Strging';
-import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -36,7 +35,7 @@ function App() {
       <Route path="/CreativeStrategy" element={<CreativeStrategy />} />
 
       {/* Wildcard fallback: handles any unknown paths */}
-      <Route path="*" element={<NotFound />} />
+      {/* <Route path="*" element={<NotFound />} /> */}
     </Routes>
   );
 }

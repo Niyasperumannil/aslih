@@ -1,0 +1,110 @@
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 90px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sector-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.sector-card:hover {
+  transform: scale(1.03);
+}
+
+.sector-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 30, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.sector-overlay h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee h3 {
+  display: inline-block;
+  animation: marquee 8s linear infinite;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .sectors-grid {
+    padding: 20px 30px;
+  }
+
+  .sector-card {
+    height: 220px;
+  }
+
+  .sector-overlay h3 {
+    font-size: 18px;
+  }
+
+  .marquee h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectors-grid {
+    padding: 20px 15px;
+  }
+
+  .sector-card {
+    height: 200px;
+  }
+
+  .sector-overlay h3 {
+    font-size: 16px;
+  }
+
+  .marquee h3 {
+    font-size: 16px;
+  }
+}

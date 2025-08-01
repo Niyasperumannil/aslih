@@ -1,0 +1,140 @@
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 5% 9% 5%;
+  margin: 2% 4% 2% 3%;
+  gap: 2rem;
+}
+
+.mission-content {
+  max-width: 80%;
+}
+
+.mission-content h2 {
+  font-size: 6rem;
+  /* font-weight: bold; */
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-family: inherit;
+}
+
+/* Forcing line break after first word */
+h2 .highlight::after {
+  content: '\A';
+  white-space: pre;
+}
+
+.highlight {
+  color: #D633FF;
+}
+
+.mission-content p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+.mission-content .tagline {
+  font-size: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.mission-content .tag {
+  color: #333;
+}
+
+.mission-content .highlighted-tag {
+  color: #D633FF;
+  border-bottom: 2px solid #4B0082;
+  padding-bottom: 0.25rem;
+}
+
+.btn-primary {
+  background-color: #111349;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #060629;
+}
+
+.mission-graphic {
+  flex-shrink: 0;
+}
+
+.mission-graphic svg {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px) {
+  .mission-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 8% 5%;
+    padding: 0 5% 5% 5%;
+    text-align: center;
+  }
+
+  .mission-content {
+    max-width: 100%;
+  }
+
+  .mission-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .mission-content p {
+    font-size: 1rem;
+  }
+
+  .mission-content .tagline {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.95rem;
+    gap: 0.5rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+  .mission-graphic {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mission-graphic svg {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-content h2 {
+    font-size: 2rem;
+  }
+
+  .mission-content p,
+  .mission-content .tagline {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}

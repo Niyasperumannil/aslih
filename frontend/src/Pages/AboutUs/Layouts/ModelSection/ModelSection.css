@@ -1,0 +1,112 @@
+.model-section {
+  padding: 60px 5%;
+  color: #0b0b40;
+  background: #ffffff;
+}
+
+.model-section h2 {
+  font-size: 6rem;
+  font-family: inherit;
+  margin: 0 0 10px;
+}
+
+.model-section .highlight {
+  color: #b400f0;
+}
+
+.model-description {
+  font-size: 1.2rem;
+  font-family: inherit;
+  max-width: 800px;
+  margin-bottom: 50px;
+  color: #1e1e72;
+  line-height: 1.6;
+}
+
+.accordion {
+  border-top: 2px solid #190b50;
+}
+
+.accordion-item {
+  border-bottom: 2px solid #190b50;
+  padding: 20px 0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #0b0b40;
+}
+
+.accordion-header span {
+  font-size: 2rem;
+  color: #0b0b40;
+}
+
+.accordion-content {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: #333;
+  line-height: 1.5;
+  padding-right: 5%;
+}
+
+/* ✅ Tablet and mobile responsiveness */
+@media (max-width: 768px) {
+  .model-section {
+    padding: 40px 6%;
+  }
+
+  .model-section h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .model-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .accordion-header {
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+  }
+
+  .accordion-header span {
+    font-size: 1.8rem;
+  }
+
+  .accordion-content {
+    font-size: 1rem;
+    padding-right: 0;
+  }
+}
+
+/* ✅ Extra small screen (phones) */
+@media (max-width: 480px) {
+  .model-section h2 {
+    padding: 50% 30% 30% 30% ;
+    font-size: 3rem;
+  }
+
+  .model-description {
+    font-size: 0.95rem;
+  }
+
+  .accordion-header {
+    font-size: 1.1rem;
+  }
+
+  .accordion-header span {
+    font-size: 1.5rem;
+  }
+
+  .accordion-content {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,63 @@
+/* General container for the whole component */
+.page-header-container {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ margin: 2rem auto; /* Centers the component on the page */
+ padding: 0 1rem;   /* Padding for smaller screens */
+}
+
+/* Smaller variation */
+.page-header-container.smaller {
+ max-width: 500px; /* Reduced maximum width */
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 0;
+ margin: 0 0 1rem 0; /* Space below the breadcrumb */
+ list-style: none;
+ font-size: 0.9rem;
+}
+
+.breadcrumb-item {
+ display: flex;
+ align-items: center;
+}
+
+/* Styling for the '>' separator */
+.breadcrumb-item + .breadcrumb-item::before {
+ content: '>';
+ display: inline-block;
+ padding: 0 0.75rem;
+ color: #6c757d; /* A muted grey color for the separator */
+}
+
+/* Styling for breadcrumb links */
+.breadcrumb-item a {
+ color: #0056b3; /* A standard dark blue for links */
+ text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+ text-decoration: underline;
+}
+
+/* Styling for the active (current) page item */
+.breadcrumb-item.active {
+ color: #212529; /* Dark text color for the current page */
+ font-weight: bold;
+}
+
+/* Banner image styling */
+.banner-image-wrapper {
+ width: 100%;
+ line-height: 0; /* Removes any extra space below the image */
+}
+
+.banner-image-wrapper img {
+  padding: 0%  0% 0% 4.1%;
+ width: 95%;
+ /* height: 500px; */
+ object-fit: cover;
+}

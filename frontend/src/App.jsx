@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header/Header';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import References from './Pages/References/References';
@@ -16,22 +17,20 @@ import Starging from './Pages/Dropdown/Starging/Strging';
 
 function App() {
   return (
-    <main>
-      <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/references" element={<References />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/ContentMarketing" element={<ContentMarketing />} />
-        <Route path="/Cro" element={<Cro />} />
-        <Route path="/Email" element={<Email />} />
-        <Route path="/Influencer" element={<Influencer />} />
-        <Route path="/SEO" element={<SEO />} />
-        <Route path="/Starging" element={<Starging />} />
-        <Route path="/CreativeStrategy" element={<CreativeStrategy />} />
-      </Routes>
-    </main>
+    <Routes>
+      <Route path="/" element={<Header />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/references" element={<References />} />
+      <Route path="/careers" element={<Careers />} />
+      <Route path="/contactus" element={<ContactUs />} />
+      <Route path="/ContentMarketing" element={<ContentMarketing />} />
+      <Route path="/Cro" element={<Cro />} />
+      <Route path="/Email" element={<Email />} />
+      <Route path="/Influencer" element={<Influencer />} />
+      <Route path="/SEO" element={<SEO />} />
+      <Route path="/Starging" element={<Starging />} />
+      <Route path="/CreativeStrategy" element={<CreativeStrategy />} />
+    </Routes>
   );
 }
 

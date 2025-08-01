@@ -9,9 +9,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // includes Popper
 
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <BrowserRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+ </BrowserRouter>
 );

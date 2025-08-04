@@ -860,13 +860,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-top: 100px;
+  /* gap: 1px; */
+  /* padding-top: px; */
 }
 
 .faq-item {
   border-bottom: 1px solid #333;
-  padding: 20px 0;
+  padding: 1px 0;
 }
 
 .faq-question {
@@ -882,12 +882,12 @@
 }
 
 .faq-question .arrow {
-  font-size: 15px;
+  font-size: 13px;
   transition: transform 0.3s ease;
 }
 
 .faq-item.active .arrow {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 
 .faq-answer {

@@ -21,7 +21,14 @@ export default function MissionSection() {
           <span className="tag">WHERE DEVICE CULTURE</span>
         </div>
 
-        <button className="btn-primary">FIND OUT MORE</button>
+<button
+  className="btn-primary"
+  onClick={() => {
+    window.open('https://wa.me/9778340818', '_blank');
+  }}
+>
+  FIND OUT MORE
+</button>
       </div>
 
       <div className="mission-graphic">

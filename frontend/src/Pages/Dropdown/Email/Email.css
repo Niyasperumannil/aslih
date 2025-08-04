@@ -78,15 +78,16 @@
 }
 
 .strategic-button {
-  background: #6366f1;
+ background: #6366f1;
   color: #fff;
   border: none;
-  padding: 14px 28px;
-  font-size: 15px;
-  font-weight: 600;
+  padding: 3px 15px;
+  font-size: 14px;
+  font-weight: 300;
   border-radius: 50px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .strategic-button:hover {

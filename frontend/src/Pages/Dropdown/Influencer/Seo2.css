@@ -700,16 +700,14 @@
 }
 
 .creativeStrategy-fifth-right {
-  flex: 1;
+ flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-top: 100px;
 }
 
 .creativeStrategy-faq-item {
   border-bottom: 1px solid #333;
-  padding: 20px 0;
+  padding: 0px 0;
 }
 
 .creativeStrategy-faq-question {
@@ -729,9 +727,9 @@
   transition: transform 0.3s ease;
 }
 
-.creativeStrategy-faq-item.active .arrow {
+/* .creativeStrategy-faq-item.active .arrow {
   transform: rotate(180deg);
-}
+} */
 
 .creativeStrategy-faq-answer {
   margin-top: 22px;

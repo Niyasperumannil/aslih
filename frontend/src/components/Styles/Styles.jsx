@@ -7,9 +7,9 @@ export default function WhoWeAreSection() {
     <section className="who-we-are-section">
       <div className="background-image" aria-hidden="true" />
 
-      <div className="info-card">
+      {/* <div className="info-card">
       
-      </div>
+      </div> */}
 
       <div className="text-panel">
         <div className="label">WHO WE ARE</div>

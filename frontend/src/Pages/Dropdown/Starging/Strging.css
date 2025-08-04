@@ -383,7 +383,7 @@
 
 .third-seo {
   max-width: 1800px;
-  padding: 50px 20px; /* Mobile default padding */
+  padding: 50px 10px; /* Mobile default padding */
   text-align: left;
   margin-top: 40px;
   font-family: 'Poppins', sans-serif;
@@ -421,7 +421,7 @@
 
 @media (min-width: 768px) {
   .third-seo {
-    padding: 70px 50px;
+    padding: 40px 30px;
     max-width: 2100px;
   }
 
@@ -713,13 +713,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-top: 100px;
+  /* gap: 10px;
+  padding-top: 100px; */
 }
 
 .seo-faq-item {
   border-bottom: 1px solid #333;
-  padding: 20px 0;
+  padding: 0px 0;
 }
 
 .seo-faq-question {
@@ -739,9 +739,9 @@
   transition: transform 0.3s ease;
 }
 
-.seo-faq-item.active .arrow {
+/* .seo-faq-item.active .arrow {
   transform: rotate(180deg);
-}
+} */
 
 .seo-faq-answer {
   margin-top: 22px;

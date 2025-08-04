@@ -1,0 +1,46 @@
+.client-logos-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+
+.client-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.logos-marquee {
+  display: inline-flex;
+  animation: scroll-marquee 20s linear infinite;
+  gap: 60px;
+}
+
+.client-logo {
+  max-height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

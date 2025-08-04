@@ -118,46 +118,68 @@ body,
 }
 
 /* 7. Navigation styling */
+/* === Global (desktop) === */
 .dw-nav,
 .nav-links {
   list-style: none;
   display: flex;
   flex: 2;
   margin: 0;
-  padding-left: 250px;
-  gap: 75px;
+  padding-inline-start: clamp(1rem, 5vw, 3rem);  /* replaces padding-left: 200px */
+  gap: clamp(1rem, 4vw, 2rem);                    /* replaces fixed 75px gap */
   font: inherit;
 }
-.dw-nav-item {
-  position: relative;
-  font-weight: 500;
-  color: #111;
-  text-decoration: none;
-  padding: 0.5rem 0;
-  font-family: inherit;
+
+/* === Hover state and underline effect (unchanged) === */
+/* — Desktop view (default) */
+
+
+/* — Tablet reductions (≤ 1024px width) */
+
+
+/* — Mobile layout override (≤ 768px width) */
+@media(max-width: 768px) {
+  /* Reset default list spacing & remove all gap */
+  .dw-nav,
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-inline-start: 2;
+    gap: 0;                 /* 🛑 No space between items */
+    width: 100%;
+    list-style: none;
+  }
+
+  /* Each nav-item: single line, full-width, no margin */
+  .dw-nav-item {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.05rem 0rem;  /* ~44px min height */
+    line-height: 0;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  /* Optional hover/focus feedback */
+  .dw-nav-item:hover,
+  .dw-nav-item:focus {
+    background-color: rgba(0, 0, 0, 0.04);
+    outline: none;
+  }
 }
-.dw-nav-item::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #111;
-  transition: width 0.3s ease;
-}
-.dw-nav-item:hover::after {
-  width: 100%;
-}
-.dw-nav-item:hover,
-.dw-nav-item:focus {
-  transform: translateY(-2px);
-  transition: transform 0.2s ease;
-}
-.dw-caret {
-  margin-left: 0.3rem;
-  font-size: 0.5rem;
-}
+
+
+
+
 
 /* 8. Hamburger toggle & dropdown */
 .dw-menu-toggle {

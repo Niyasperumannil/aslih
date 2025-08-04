@@ -7,7 +7,7 @@
   flex-direction: column; /* Mobile: stack vertically */
   align-items: center;
   justify-content: center;
-  padding: 60px 10px;
+  padding: 90px 10px;
   background: #ffffff;
   max-width: 2200px;
   margin: 0 auto;
@@ -437,7 +437,7 @@
 
 .third-cro {
   max-width: 1800px;
-  padding: 40px 90px;
+  padding: 40px 10px;
   text-align: left;
   margin-top: 40px;
   font-family: 'Poppins', sans-serif;
@@ -806,7 +806,7 @@
 .fifth-page {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
   padding: 80px 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 350;
@@ -844,7 +844,7 @@
   width: fit-content;
 }
 
-.fifth-left h2 {
+.fifth-left .content-fifth-page {
   font-size: 22px;
   max-width: 290px;
 }
@@ -876,8 +876,8 @@
   cursor: pointer;
 }
 
-.faq-question h4 {
-  font-size: 19px;
+.faq-question .faq-title {
+  font-size: 13px;
   margin: 0;
 }
 
@@ -886,9 +886,9 @@
   transition: transform 0.3s ease;
 }
 
-.faq-item.active .arrow {
-  /* transform: rotate(180deg); */
-}
+/* .faq-item.active .arrow {
+  transform: rotate(180deg);
+} */
 
 .faq-answer {
   margin-top: 20px;

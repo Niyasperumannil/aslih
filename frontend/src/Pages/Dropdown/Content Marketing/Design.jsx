@@ -269,7 +269,7 @@ const Cro = () => {
       <div className="fifth-page">
         <div className="fifth-left">
           <button className="tag-button">LEARN MORE</button>
-          <h2>Learn more about CRO.</h2>
+          <h2 className='content-fifth-page' >Learn more about CRO.</h2>
           <p>
             Dive into the world of CRO and discover how our tailored strategies
             can bridge the gap between traffic and revenue. Learn about the
@@ -285,7 +285,7 @@ const Cro = () => {
               key={index}
             >
               <div className="faq-question" onClick={() => handleToggle(index)}>
-                <h4>{faq.question}</h4>
+                <h4 className='faq-title'>{faq.question}</h4>
                 <span className="arrow">
                   {activeIndex === index ? '▲' : '▼'}
                 </span>

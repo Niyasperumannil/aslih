@@ -6,10 +6,10 @@ const Testimonial = () => {
     <section className="testimonial-section">
       <div className="testimonial-container">
         <div className="testimonial-image">
-          <img src='https://datawords.com/wp-content/uploads/2023/06/Rectangle-100-1024x1024.png' alt="Profile of Jie Gao" />
+          <img src='public/pexels-canvastudio-3194519.jpg' alt="Profile of Jie Gao" />
         </div>
         <div className="testimonial-content">
-          <span className="quote-mark">“</span>
+          {/* <span className="quote-mark">“</span> */}
           <p className="testimonial-text">
             No great man lives in vain. The history of the world is but the biography of great men
             power your digital   platforms  24/7 within 4 hours worldwide, whatever the culture.

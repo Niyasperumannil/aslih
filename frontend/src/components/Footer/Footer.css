@@ -76,6 +76,40 @@
   display: flex;
   gap: 1rem;
 }
+.footer-copy {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+.footer-logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: inline-flex;
+  line-height: 1; /* ensures consistent clipping */
+}
+
+.footer-logo-text .letter-purple {
+  color: #5A00CC;
+}
+
+/* Split-color style for the "X" */
+.footer-logo-text .letter-split {
+  display: inline-block;
+  background: linear-gradient(to right, #30D1B2 50%, #5A00CC 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-copy {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
 
 .footer-socials a {
   background-color: #001042;

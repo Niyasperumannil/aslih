@@ -15,7 +15,7 @@ const Expertise = () => {
       <div className="expertise-icons">
         <div className="expertise-item">
           <img
-            src="https://datawords.com/wp-content/uploads/2023/06/multiple-intelligence-1.png"
+            src="public/aslih1.webp"
             alt="Digital Expertise Icon"
           />
           <h3>Digital Expertise</h3>
@@ -29,7 +29,7 @@ const Expertise = () => {
 
         <div className="expertise-item">
           <img
-            src="https://datawords.com/wp-content/uploads/2023/06/multiple-intelligence-1-1.png"
+            src="public/aslih2.webp"
             alt="Cultural Adaptation Icon"
           />
           <h3>Cultural Adaptation</h3>
@@ -43,7 +43,7 @@ const Expertise = () => {
 
         <div className="expertise-item">
           <img
-            src="https://datawords.com/wp-content/uploads/2023/06/multiple-intelligence-1-2.png"
+            src="public/aslih3.webp"
             alt="Delivery Ingenuity Icon"
           />
           <h3>Delivery Ingenuity</h3>

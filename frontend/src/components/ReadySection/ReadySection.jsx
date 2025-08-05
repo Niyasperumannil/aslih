@@ -13,7 +13,7 @@ const ReadySection = () => (
         with proven impact, Power is ready to be your partner in business growth.
       </p>
       <a
-        href="https://wa.me/1234567890?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
+        href="https://wa.me/9778340818?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="ready-button"

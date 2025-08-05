@@ -55,14 +55,21 @@ const CreativeStrategy = () => {
             stand out, connect deeply with your audience, and achieve lasting
             impact.
           </p>
-          <button className="creativeStrategy-button">
-            Talk to a Creative Strategist <span className="arrow">→</span>
-          </button>
+          <a
+  href="https://wa.me/1234567890?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button class="cro-button">
+    Talk To An Expert <span class="arrow">→</span>
+  </button>
+</a>
+
         </div>
 
         <div className="creativeStrategy-image-container">
           <img
-            src="public/sector.jpg"
+            src="public/sub-5.jpg"
             alt="Creative Strategy"
             className="creativeStrategy-image"
           />

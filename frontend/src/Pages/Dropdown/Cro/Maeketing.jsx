@@ -54,14 +54,19 @@ const Influencer = () => {
             expand reach, and drive engagement through powerful influencer
             partnerships.
           </p>
+           <a
+  href="https://wa.me/1234567890?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
+  target="_blank"
+  rel="noopener noreferrer"
+>
           <button className="influencer-button">
             Talk to an Influencer Expert <span className="arrow">→</span>
-          </button>
+          </button></a>
         </div>
 
         <div className="influencer-image-container">
           <img
-            src="public/Influencer-1.webp"
+            src="public/sub-3.jpg"
             alt="Influencer Marketing"
             className="influencer-image"
           />

@@ -10,11 +10,11 @@ export default function Header() {
   const [introClass, setIntroClass] = useState('drop-intro');
 
   const navItems = [
-    { label: 'ABOUT US', link: 'about' },
+    { label: 'ABOUT', link: 'about' },
     { label: 'SERVICES', hasDropdown: true },
     { label: 'REFERENCES', link: 'references' },
     { label: 'CAREERS', link: 'careers' },
-    { label: 'CONTACT US', link: 'contactus' },
+    { label: 'CONTACT', link: 'contactus' },
   ];
 
   const serviceItems = [
@@ -23,7 +23,7 @@ export default function Header() {
     { label: 'Email', link: 'Email' },
     { label: 'Influencer', link: 'Influencer' },
     { label: 'SEO', link: 'SEO' },
-    { label: 'Starging', link: 'Starging' },
+    // { label: 'Starging', link: 'Starging' },
     { label: 'CreativeStrategy', link: 'CreativeStrategy' },
 
 
@@ -55,7 +55,7 @@ export default function Header() {
       <header className={`dw-header app-header animated-header ${introClass}`}>
        <div className="dw-container"> 
   <a href="/">
-    <img src="dexo.jpg" alt="Logo" className="dw-logo" />
+    <img src="public/dexo3.png" alt="Logo" className="dw-logo" />
   </a>
 
   <nav className={`dw-nav ${menuOpen ? 'open' : ''}`}>

@@ -66,15 +66,22 @@ const Email = () => {
             Get full-service email marketing strategy and implementation that
             consistently and reliably churns out ROI.
           </p>
-          <button className="Email-Sms-button">
-            Get a Proposal <span className="Email-Sms-arrow">→</span>
-          </button>
+          <a
+  href="https://wa.me/1234567890?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button class="cro-button">
+    Get a Proposal <span class="arrow">→</span>
+  </button>
+</a>
+
         </div>
 
         {/* Image Section */}
         <div className="Email-Sms-image-container">
           <img
-            src="public/Email-1.webp"
+            src="public/sub-2.jpg"
             alt="CRO"
             className="Email-Sms-image"
           />

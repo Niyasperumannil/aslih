@@ -25,10 +25,13 @@ export default function Header() {
   ];
 
   const serviceItems = [
-    { label: 'Design', link: '#design' },
-    { label: 'Development', link: '#development' },
-    { label: 'Marketing', link: '#marketing' },
-    { label: 'SEO', link: '#seo' },
+     { label: 'ContentMarketing', link: 'ContentMarketing' },
+    { label: 'Cro', link: 'Cro' },
+    { label: 'Email', link: 'Email' },
+    { label: 'Influencer', link: 'Influencer' },
+    { label: 'SEO', link: 'SEO' },
+    // { label: 'Starging', link: 'Starging' },
+    { label: 'CreativeStrategy', link: 'CreativeStrategy' },
   ];
 
   useEffect(() => {
@@ -56,7 +59,7 @@ export default function Header() {
       <header className={`dw-header app-header animated-header ${introClass}`}>
         <div className="dw-container"> 
   <a href="/">
-    <img src="dexo.jpg" alt="Logo" className="dw-logo" />
+    <img src="public/dexo3.png" alt="Logo" className="dw-logo" />
   </a>
 
   <nav className={`dw-nav ${menuOpen ? 'open' : ''}`}>

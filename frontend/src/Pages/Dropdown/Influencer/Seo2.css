@@ -107,8 +107,8 @@
 .creativeStrategy-image-container {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  margin-top: 20px;
+ max-width: 400px;
+  margin: 80px;
   text-align: center;
 }
 
@@ -197,7 +197,7 @@
     align-items: flex-start;
     gap: 30px;
     margin-top: 40px;
-    padding: 60px 90px;
+    padding: 100px 90px;
   }
 }
 
@@ -298,7 +298,7 @@
   gap: 20px;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 50px 60px;
+  padding: 50px 20px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -306,7 +306,7 @@
   .creativeStrategy-second-boxes {
     grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
     gap: 20px;
-        padding: 60px 80px;
+        padding: 60px 90px;
 
   }
 }
@@ -381,7 +381,7 @@
 
 .creativeStrategy-third {
   max-width: 1800px;
-  padding: 50px 20px; /* Mobile default padding */
+  padding: 10px 20px; /* Mobile default padding */
   text-align: left;
   margin-top: 40px;
   font-family: 'Poppins', sans-serif;
@@ -467,7 +467,7 @@
   .creativeStrategy-service-contents {
     flex-direction: row;
     justify-content: space-around;
-    gap: 250px;
+    gap: 200px;
     padding: 60px 4px;
     max-width: 1900px;
   }
@@ -485,7 +485,7 @@
 @media (min-width: 768px) {
   .creativeStrategy-service-contents span {
     font-size: 24px;
-    padding-top: 80px;
+    padding-top: 60px;
   }
 }
 
@@ -505,7 +505,7 @@
   .creativeStrategy-steps {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    padding: 60px 70px;
+    padding: 30px 70px;
   }
 }
 
@@ -763,7 +763,7 @@
   }
 
   .creativeStrategy-faq-question h4 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .creativeStrategy-faq-answer {

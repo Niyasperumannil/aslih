@@ -51,14 +51,21 @@ const ContentMarketing = () => {
             brand build trust, generate leads, and drive growth through valuable
             storytelling.
           </p>
-          <button className="content-marketing-button">
-            Talk to a Content Expert <span className="arrow">→</span>
-          </button>
+         <a
+  href="https://wa.me/1234567890?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button class="cro-button">
+    Talk To Content Expert <span class="arrow">→</span>
+  </button>
+</a>
+
         </div>
 
         <div className="content-marketing-image-container">
           <img
-            src="public/Content_Marketing.webp"
+            src="public/sub-6.jpg"
             alt="Content Marketing"
             className="content-marketing-image"
           />

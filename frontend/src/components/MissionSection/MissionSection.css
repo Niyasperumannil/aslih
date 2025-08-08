@@ -13,7 +13,6 @@
 
 .mission-content h2 {
   font-size: 6rem;
-  /* font-weight: bold; */
   line-height: 1.1;
   margin-bottom: 1rem;
   font-family: 'Poppins', sans-serif;
@@ -79,6 +78,53 @@ h2 .highlight::after {
   height: auto;
 }
 
+/* ---------- Animation Styles ---------- */
+
+/* Initial hidden state */
+.mission-content,
+.mission-graphic {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Animate in when .animate is added */
+.mission-section.animate .mission-content {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideFromLeft 1s ease forwards;
+}
+
+.mission-section.animate .mission-graphic {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideFromRight 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Keyframes for animations */
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* ---------- Responsive Styles ---------- */
 @media (max-width: 768px) {
   .mission-section {
@@ -112,14 +158,9 @@ h2 .highlight::after {
     width: 100%;
   }
 
+  /* Hide the photo on mobile */
   .mission-graphic {
-    margin-top: 2rem;
-    text-align: center;
-    width: 100%;
-  }
-
-  .mission-graphic svg {
-    max-width: 100%;
+    display: none;
   }
 }
 

@@ -10,8 +10,19 @@
   margin: auto;
   padding: 60px 24px;
   font-family: 'Poppins', sans-serif;
+
+  /* animation initial state */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 .ocl-text-left * { font-family: inherit; }
+
+/* --- Animate when in view --- */
+.ocl-text-left.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* --- Responsive Columns on Desktop/Tablet --- */
 @media (min-width: 768px) {
@@ -26,6 +37,13 @@
 /* --- Info Section Styling --- */
 .ocl-info {
   grid-area: info;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.ocl-text-left.animate .ocl-info {
+  opacity: 1;
+  transform: translateX(0);
 }
 .ocl-info h2 {
   margin: 0;
@@ -53,43 +71,28 @@
 }
 .ocl-grid::-webkit-scrollbar { display: none; }
 
-/* --- Tablet Adjustments (~<=992px) --- */
-@media (max-width: 991px) {
-  .ocl-info h2 { font-size: clamp(2.5rem, 5.5vw, 5rem); }
-  .ocl-info p { font-size: clamp(0.9rem, 1.8vw, 1.25rem); }
-  .ocl-grid { gap: 24px; }
-}
-
-/* --- Mobile (<600px) Carousel Mode --- */
-@media (max-width: 599px) {
-  .ocl-text-left {
-    padding: 40px 16px;
-    gap: 24px;
-    text-align: center;
-  }
-  .ocl-info h2, .ocl-info p { text-align: center; }
-  .ocl-info h2 { font-size: clamp(2rem, 5vw, 4rem); }
-  .ocl-info p { font-size: clamp(0.8rem, 1.8vw, 1rem); }
-
-  .ocl-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 16px;
-    overflow-x: auto;
-    animation: none;
-  }
-  .ocl-card {
-    flex: 0 0 calc(70% - 8px);
-    max-width: calc(70% - 8px);
-  }
-}
-
-/* --- Card Styling --- */
+/* --- Card Styling with animation --- */
 .ocl-card {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
+.ocl-text-left.animate .ocl-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger delay */
+.ocl-text-left.animate .ocl-card:nth-child(1) { transition-delay: 0.3s; }
+.ocl-text-left.animate .ocl-card:nth-child(2) { transition-delay: 0.45s; }
+.ocl-text-left.animate .ocl-card:nth-child(3) { transition-delay: 0.6s; }
+.ocl-text-left.animate .ocl-card:nth-child(4) { transition-delay: 0.75s; }
+.ocl-text-left.animate .ocl-card:nth-child(5) { transition-delay: 0.9s; }
+.ocl-text-left.animate .ocl-card:nth-child(6) { transition-delay: 1.05s; }
+
 .ocl-img-wrap {
   position: relative;
   border-radius: 16px;
@@ -131,9 +134,39 @@
   line-height: 1.35;
 }
 
+/* --- Tablet Adjustments (~<=992px) --- */
+@media (max-width: 991px) {
+  .ocl-info h2 { font-size: clamp(2.5rem, 5.5vw, 5rem); }
+  .ocl-info p { font-size: clamp(0.9rem, 1.8vw, 1.25rem); }
+  .ocl-grid { gap: 24px; }
+}
+
+/* --- Mobile (<600px) Carousel Mode --- */
+@media (max-width: 599px) {
+  .ocl-text-left {
+    padding: 40px 16px;
+    gap: 24px;
+    text-align: center;
+  }
+  .ocl-info h2, .ocl-info p { text-align: center; }
+  .ocl-info h2 { font-size: clamp(2rem, 5vw, 4rem); }
+  .ocl-info p { font-size: clamp(0.8rem, 1.8vw, 1rem); }
+
+  .ocl-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    animation: none;
+  }
+  .ocl-card {
+    flex: 0 0 calc(70% - 8px);
+    max-width: calc(70% - 8px);
+  }
+}
+
 /* --- Disable Marquee Animation on Mobile --- */
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-50%)); }
 }
-/* Removed marquee to avoid layout issues on mobile */

@@ -1,27 +1,48 @@
-// ReadySection.jsx
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './ReadySection.css';
 
-const ReadySection = () => (
-  <section className="ready-section">
-    <div className="ready-content">
-      <h1 className="ready-heading">
-        Ready to be <span className="highlight">undeniable</span>
-      </h1>
-      <p className="ready-description">
-        For brands and enterprise companies that demand digital marketing strategies
-        with proven impact, Power is ready to be your partner in business growth.
-      </p>
-      <a
-        href="https://wa.me/9778340818?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="ready-button"
-      >
-        Get in touch <span className="arrow">↗</span>
-      </a>
-    </div>
-  </section>
-);
+const ReadySection = () => {
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      className={`ready-section ${visible ? 'animate' : ''}`}
+    >
+      <div className="ready-content">
+        <h1 className="ready-heading">
+          Ready to be <span className="highlight">undeniable</span>
+        </h1>
+        <p className="ready-description">
+          For brands and enterprise companies that demand digital marketing strategies
+          with proven impact, Power is ready to be your partner in business growth.
+        </p>
+        <a
+          href="https://wa.me/9778340818?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ready-button"
+        >
+          Get in touch <span className="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+  );
+};
 
 export default ReadySection;

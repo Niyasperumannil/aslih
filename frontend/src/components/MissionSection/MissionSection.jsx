@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './MissionSection.css';
 
 export default function MissionSection() {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="mission-section">
+    <section
+      ref={sectionRef}
+      className={`mission-section ${isVisible ? 'animate' : ''}`}
+    >
       <div className="mission-content">
         <h2>
           OUR<br />
@@ -12,7 +36,7 @@ export default function MissionSection() {
 
         <p>
           Thanks to AI and Human Intelligence, we accelerate the performance of
-          international brands by making their content locally relevant{' '}
+          international brands by making their content locally relevant.
         </p>
 
         <div className="tagline">
@@ -21,14 +45,14 @@ export default function MissionSection() {
           <span className="tag">WHERE DEVICE CULTURE</span>
         </div>
 
-<button
-  className="btn-primary"
-  onClick={() => {
-    window.open('https://wa.me/9778340818', '_blank');
-  }}
->
-  FIND OUT MORE
-</button>
+        <button
+          className="btn-primary"
+          onClick={() => {
+            window.open('https://wa.me/9778340818', '_blank');
+          }}
+        >
+          FIND OUT MORE
+        </button>
       </div>
 
       <div className="mission-graphic">

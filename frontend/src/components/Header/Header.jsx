@@ -11,6 +11,7 @@ import ClientLogos from '../ClientLogos/ClientLogos';
 import ReadySection from '../ReadySection/ReadySection';
 import Footer from '../Footer/Footer';
 import VerticalHeader from '../VerticalHeader/VerticalHeader';
+import Navbar from '../Navbar/Navbar';
 export default function Header() {
   const [loading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -142,7 +143,7 @@ export default function Header() {
 
       <OurClients />
       <NewsSection />
-      {/* <StatsSection /> */}
+      <StatsSection />
       <ReadySection />
       <Footer />
     </>

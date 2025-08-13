@@ -84,7 +84,7 @@ const Cro = () => {
 
         {/* Image Section */}
         <div className="cro-image-container">
-          <img src="public/sub1.jpg" alt="CRO" className="cro-image" />
+          <img src="/sub1.jpg" alt="CRO" className="cro-image" />
         </div>
       </div>
       <div className="cro-title">
@@ -122,7 +122,7 @@ const Cro = () => {
       <div className="cro-second-boxes">
         <div className="first-cro-box">
           <div className="logo-boxes">
-            <img src="public/Services_AmazonMarketing_100.webp" alt="" />
+            <img src="/Services_AmazonMarketing_100.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Eliminate Customer Apathy</p>
@@ -137,7 +137,7 @@ const Cro = () => {
         </div>
         <div className="first-cro-box">
           <div className="logo-boxes">
-            <img src="public/service-icon.webp" alt="" />
+            <img src="/service-icon.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Eliminate Customer Apathy</p>
@@ -152,7 +152,7 @@ const Cro = () => {
         </div>
         <div className="first-cro-box">
           <div className="logo-boxes">
-            <img src="public/Capabilities_FullService_100.webp" alt="" />
+            <img src="/Capabilities_FullService_100.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Eliminate Customer Apathy</p>

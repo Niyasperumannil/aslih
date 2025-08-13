@@ -63,7 +63,7 @@ const StrategicPage = () => {
         {/* === RIGHT IMAGE === */}
         <div className="strategic-image-container">
           <img
-            src="public/sub-4.jpg"
+            src="/sub-4.jpg"
             alt="Influencer Marketing"
             className="strategic-image"
           />

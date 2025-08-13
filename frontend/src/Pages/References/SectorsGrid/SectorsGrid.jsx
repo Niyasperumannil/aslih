@@ -3,16 +3,16 @@ import './SectorsGrid.css';
 
 // Fresh startup-friendly sectors (10 items)
 const sectors = [
-  { name: 'E‑Commerce', image: '/public/sector1.jpg' },
-  { name: 'Local Businesses', image: '/public/sector2.jpg' },
-  { name: 'Creative & Design', image: '/public/sector3.jpg' },
-  { name: 'Technology & Startups', image: '/public/sector4.jpg' },
-  { name: 'Food & Beverages', image: '/public/sector5.jpg' },
-  { name: 'Education & Training', image: '/public/sector6.jpg' },
-  { name: 'Social Media & Marketing', image: '/public/sector7.jpg' },
-  { name: 'Events & Entertainment', image: '/public/sector8.jpg' },
-  { name: 'Travel & Tourism', image: '/public/sector9.jpg' },
-  { name: 'Health & Wellness', image: '/public/sector10.jpg' },
+  { name: 'E‑Commerce', image: '/sector1.jpg' },
+  { name: 'Local Businesses', image: '/sector2.jpg' },
+  { name: 'Creative & Design', image: '/sector3.jpg' },
+  { name: 'Technology & Startups', image: '/sector4.jpg' },
+  { name: 'Food & Beverages', image: '/sector5.jpg' },
+  { name: 'Education & Training', image: '/sector6.jpg' },
+  { name: 'Social Media & Marketing', image: '/sector7.jpg' },
+  { name: 'Events & Entertainment', image: '/sector8.jpg' },
+  { name: 'Travel & Tourism', image: '/sector9.jpg' },
+  { name: 'Health & Wellness', image: '/sector1.jpg' },
 ];
 
 const SectorsGrid = () => {

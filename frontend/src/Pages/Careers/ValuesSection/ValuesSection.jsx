@@ -7,7 +7,7 @@ const ValuesSection = () => (
       <div
         className="bg-image"
         style={{
-          backgroundImage: "url('./public/join1.jpg')",
+          backgroundImage: "url('/join1.jpg')",
           height: '400px',
           backgroundSize: 'cover',
           backgroundPosition: 'center',

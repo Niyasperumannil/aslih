@@ -23,13 +23,13 @@ function App() {
       <Route path="/references" element={<References />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/contactus" element={<ContactUs />} />
-      <Route path="/ContentMarketing" element={<ContentMarketing />} />
-      <Route path="/Cro" element={<Cro />} />
+      <Route path="/GROWTH MARKETING" element={<ContentMarketing />} />
+      <Route path="/Email" element={<Cro />} />
       <Route path="/Email" element={<Email />} />
-      <Route path="/Influencer" element={<Influencer />} />
-      <Route path="/SEO" element={<SEO />} />
+      <Route path="/CREATIVE SERVICES" element={<Influencer />} />
+      <Route path="/SEO SERVICES" element={<SEO />} />
       <Route path="/Starging" element={<Starging />} />
-      <Route path="/CreativeStrategy" element={<CreativeStrategy />} />
+      <Route path="/CONTENT SERVICES" element={<CreativeStrategy />} />
     </Routes>
   );
 }

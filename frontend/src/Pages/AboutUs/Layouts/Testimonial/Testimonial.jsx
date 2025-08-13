@@ -6,7 +6,7 @@ const Testimonial = () => {
     <section className="testimonial-section">
       <div className="testimonial-container">
         <div className="testimonial-image">
-          <img src='public/pexels-canvastudio-3194519.jpg' alt="Profile of Jie Gao" />
+          <img src='/pexels-canvastudio-3194519.jpg' alt="Profile of Jie Gao" />
         </div>
         <div className="testimonial-content">
           {/* <span className="quote-mark">“</span> */}

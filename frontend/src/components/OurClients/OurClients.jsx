@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import './OurClients.css';
 
 const clients = [
-  { title: 'E-RETAIL', subtitle: 'Taking our steps in boosting online sales for retailers worldwide.', image: './public/client3.jpg', logoText: 'E-RETAIL' },
-  { title: 'SOCIAL MEDIA', subtitle: 'Crafting our social campaigns tailored for the European market.', image: './public/client1.jpg', logoText: 'SOCIAL MEDIA' },
-  { title: 'MOBILITY', subtitle: 'Our journey in building brand awareness across diverse markets.', image: './public/client2.jpg', logoText: 'MOBILITY' },
-  { title: 'FASHION', subtitle: 'Exploring premium retail & creative seasonal storytelling for the first time.', image: './public/client 5.jpg', logoText: 'FASHION' },
-  { title: 'WEBSITE', subtitle: 'Designing our websites with engaging seasonal storytelling.', image: './public/client7.jpg', logoText: 'WEBSITE' },
-  { title: 'SEO', subtitle: 'Taking our steps in helping brands grow through SEO storytelling.', image: './public/client8.jpg', logoText: 'SEO' }
+  { title: 'E-RETAIL', subtitle: 'Taking our steps in boosting online sales for retailers worldwide.', image: '/client3.jpg', logoText: 'E-RETAIL' },
+  { title: 'SOCIAL MEDIA', subtitle: 'Crafting our social campaigns tailored for the European market.', image: '/client1.jpg', logoText: 'SOCIAL MEDIA' },
+  { title: 'MOBILITY', subtitle: 'Our journey in building brand awareness across diverse markets.', image: '/client2.jpg', logoText: 'MOBILITY' },
+  { title: 'FASHION', subtitle: 'Exploring premium retail & creative seasonal storytelling for the first time.', image: '/client 5.jpg', logoText: 'FASHION' },
+  { title: 'WEBSITE', subtitle: 'Designing our websites with engaging seasonal storytelling.', image: '/client7.jpg', logoText: 'WEBSITE' },
+  { title: 'SEO', subtitle: 'Taking our steps in helping brands grow through SEO storytelling.', image: '/client8.jpg', logoText: 'SEO' }
 ];
 
 export default function OurClients() {

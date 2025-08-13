@@ -65,7 +65,7 @@ const ContentMarketing = () => {
 
         <div className="content-marketing-image-container">
           <img
-            src="public/sub-6.jpg"
+            src="/sub-6.jpg"
             alt="Content Marketing"
             className="content-marketing-image"
           />
@@ -103,7 +103,7 @@ const ContentMarketing = () => {
       <div className="content-marketing-second-boxes">
         <div className="first-content-marketing-box">
           <div className="logo-boxes">
-            <img src="public/Content_Visibility.webp" alt="" />
+            <img src="/Content_Visibility.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Increase Visibility</p>
@@ -115,7 +115,7 @@ const ContentMarketing = () => {
         </div>
         <div className="first-content-marketing-box">
           <div className="logo-boxes">
-            <img src="public/Content_Engagement.webp" alt="" />
+            <img src="/Content_Engagement.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Drive Engagement</p>
@@ -127,7 +127,7 @@ const ContentMarketing = () => {
         </div>
         <div className="first-content-marketing-box">
           <div className="logo-boxes">
-            <img src="public/Content_Leads.webp" alt="" />
+            <img src="/Content_Leads.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Generate Leads</p>

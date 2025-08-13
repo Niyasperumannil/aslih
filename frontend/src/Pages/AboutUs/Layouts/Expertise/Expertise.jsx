@@ -15,7 +15,7 @@ const Expertise = () => {
       <div className="expertise-icons">
         <div className="expertise-item">
           <img
-            src="public/aslih1.webp"
+            src="/aslih1.webp"
             alt="Digital Expertise Icon"
           />
           <h3>Digital Expertise</h3>
@@ -29,7 +29,7 @@ const Expertise = () => {
 
         <div className="expertise-item">
           <img
-            src="public/aslih2.webp"
+            src="/aslih2.webp"
             alt="Cultural Adaptation Icon"
           />
           <h3>Cultural Adaptation</h3>
@@ -43,7 +43,7 @@ const Expertise = () => {
 
         <div className="expertise-item">
           <img
-            src="public/aslih3.webp"
+            src="/aslih3.webp"
             alt="Delivery Ingenuity Icon"
           />
           <h3>Delivery Ingenuity</h3>

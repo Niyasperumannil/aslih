@@ -4,25 +4,25 @@ import "./NewsSection.css";
 const newsItems = [
   {
     id: 1,
-    image: "public/news1.jpg",
+    image: "/news1.jpg",
     tag: "case",
     title: "Taking our  steps in localising luxury content for every culture"
   },
   {
     id: 2,
-    image: "public/news2.jpg",
+    image: "/news2.jpg",
     tag: "case",
     title: "Our  experience in building and managing multicultural e-commerce platforms"
   },
   {
     id: 3,
-    image: "public/news3.jpg",
+    image: "/news3.jpg",
     tag: "case",
     title: "Starting  journey in growing organic traffic across different cultures"
   },
   {
     id: 4,
-    image: "public/news4.jpg",
+    image: "/news4.jpg",
     tag: "case",
     title: "Creating  first culturally-aware social media promotions"
   }

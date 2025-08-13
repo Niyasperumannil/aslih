@@ -81,7 +81,7 @@ const Email = () => {
         {/* Image Section */}
         <div className="Email-Sms-image-container">
           <img
-            src="public/sub-2.jpg"
+            src="/sub-2.jpg"
             alt="CRO"
             className="Email-Sms-image"
           />
@@ -124,7 +124,7 @@ const Email = () => {
       <div className="Email-Sms-second-boxes">
         <div className="Email-Sms-first-box">
           <div className="Email-Sms-logo-boxes">
-            <img src="public/Services_AmazonMarketing_100.webp" alt="" />
+            <img src="/Services_AmazonMarketing_100.webp" alt="" />
           </div>
           <div className="Email-Sms-box-contents">
             <p>Nurture Leads From Warm to Hot</p>
@@ -137,7 +137,7 @@ const Email = () => {
         </div>
         <div className="Email-Sms-first-box">
           <div className="Email-Sms-logo-boxes">
-            <img src="public/service-icon.webp" alt="" />
+            <img src="/service-icon.webp" alt="" />
           </div>
           <div className="Email-Sms-box-contents">
             <p>Build Trust and Credibility</p>
@@ -150,7 +150,7 @@ const Email = () => {
         </div>
         <div className="Email-Sms-first-box">
           <div className="Email-Sms-logo-boxes">
-            <img src="public/Capabilities_FullService_100.webp" alt="" />
+            <img src="/Capabilities_FullService_100.webp" alt="" />
           </div>
           <div className="Email-Sms-box-contents">
             <p>Churn Out Sales Like a Machine</p>

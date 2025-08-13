@@ -55,7 +55,7 @@ const Seo = () => {
 
         {/* Image Section */}
         <div className="seo-image-container">
-          <img src="public/seo.webp" alt="SEO" className="seo-image" />
+          <img src="/seo.webp" alt="SEO" className="seo-image" />
         </div>
       </div>
 
@@ -90,7 +90,7 @@ const Seo = () => {
       <div className="seo-second-boxes">
         <div className="first-seo-box">
           <div className="logo-boxes">
-            <img src="public/Services_SEO_100.webp" alt="" />
+            <img src="/Services_SEO_100.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Amplify brand visibility</p>
@@ -102,7 +102,7 @@ const Seo = () => {
         </div>
         <div className="first-seo-box">
           <div className="logo-boxes">
-            <img src="public/service-icon.webp" alt="" />
+            <img src="/service-icon.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Optimize marketing and design spend</p>
@@ -113,7 +113,7 @@ const Seo = () => {
         </div>
         <div className="first-seo-box">
           <div className="logo-boxes">
-            <img src="public/Capabilities_FullService_100.webp" alt="" />
+            <img src="/Capabilities_FullService_100.webp" alt="" />
           </div>
           <div className="box-contents">
             <p>Grow your audience</p>

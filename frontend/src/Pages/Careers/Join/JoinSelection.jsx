@@ -3,13 +3,13 @@ import './JoinSelection.css';
 
 const cards = [
   {
-    img: './public/join2.jpg',
+    img: '/join2.jpg',
     title: 'OUR TALENTS',
     subtitle: 'Join our Multicultural Ingenuity™.',
     link: '/talents'
   },
   {
-    img: './public/join3.jpg',
+    img: '/join3.jpg',
     title: 'OUR VALUES',
     subtitle: 'Discover the values we share at Datawords.',
     link: '/values'

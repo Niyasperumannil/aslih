@@ -2,7 +2,7 @@ import React from 'react';
 import './WhoAreWe.css';
 
 // You would replace this with your actual image path
-const bannerImage = './public/aboutus.jpg';
+const bannerImage = '/aboutus.jpg';
 
 const PageHeader = () => {
   return (

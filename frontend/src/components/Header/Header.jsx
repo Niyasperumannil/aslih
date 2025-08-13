@@ -27,13 +27,13 @@ export default function Header() {
   ];
 
   const serviceItems = [
-    { label: 'ContentMarketing', link: 'ContentMarketing' },
-    { label: 'Cro', link: 'Cro' },
+    { label: 'GROWTH MARKETING', link: 'GROWTH MARKETING' },
     { label: 'Email', link: 'Email' },
-    { label: 'Influencer', link: 'Influencer' },
-    { label: 'SEO', link: 'SEO' },
-    // { label: 'Starging', link: 'Starging' },
-    { label: 'CreativeStrategy', link: 'CreativeStrategy' },
+    // { label: 'INFLUENCER SERVICES', link: 'Email' },
+    { label: 'CREATIVE SERVICES', link: 'CREATIVE SERVICES' },
+    { label: 'SEO SERVICES', link: 'SEO SERVICES' },
+    { label: 'Starging', link: 'Starging' },
+    { label: 'CONTENT SERVICES', link: 'CONTENT SERVICES' },
    
 
 
@@ -65,7 +65,7 @@ export default function Header() {
       <header className={`dw-header app-header animated-header ${introClass}`}>
        <div className="dw-container"> 
   <a href="/">
-    <img src="public/dexo3.png" alt="Logo" className="dw-logo" />
+    <img src="/dexo3.png" alt="Logo" className="dw-logo" />
   </a>
 
   <nav className={`dw-nav ${menuOpen ? 'open' : ''}`}>

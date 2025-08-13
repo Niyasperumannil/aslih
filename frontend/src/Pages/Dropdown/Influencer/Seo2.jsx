@@ -69,7 +69,7 @@ const CreativeStrategy = () => {
 
         <div className="creativeStrategy-image-container">
           <img
-            src="public/sub-5.jpg"
+            src="/sub-5.jpg"
             alt="Creative Strategy"
             className="creativeStrategy-image"
           />
@@ -106,7 +106,7 @@ const CreativeStrategy = () => {
       <div className="creativeStrategy-second-boxes">
         <div className="first-creativeStrategy-box">
           <div className="logo-boxes">
-            <img src="public/service-icon.webp" alt="Brand Identity" />
+            <img src="/service-icon.webp" alt="Brand Identity" />
           </div>
           <div className="box-contents">
             <p>Clarify Identity</p>
@@ -119,7 +119,7 @@ const CreativeStrategy = () => {
         <div className="first-creativeStrategy-box">
           <div className="logo-boxes">
             <img
-              src="public/Capabilities_FullService_100.webp"
+              src="/Capabilities_FullService_100.webp"
               alt="Audience Connection"
             />
           </div>
@@ -133,7 +133,7 @@ const CreativeStrategy = () => {
         </div>
         <div className="first-creativeStrategy-box">
           <div className="logo-boxes">
-            <img src="public/Services_AmazonMarketing_100.webp" alt="Impact Campaigns" />
+            <img src="/Services_AmazonMarketing_100.webp" alt="Impact Campaigns" />
           </div>
           <div className="box-contents">
             <p>Launch Impactful Campaigns</p>

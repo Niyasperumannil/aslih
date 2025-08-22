@@ -57,7 +57,7 @@ export default function DigitalMarketingQuiz() {
               ? "👍 Good job! You know your basics."
               : "🧠 Keep learning—there’s more to explore."}
           </p>
-          <a href="https://wa.me/1234567890?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services." className="dmq-contact-button">
+          <a href="https://wa.me/9778340818?text=Hi%20there!%20I%20would%20love%20to%20know%20more%20about%20your%20services." className="dmq-contact-button">
             Contact Us
           </a>
         </div>
